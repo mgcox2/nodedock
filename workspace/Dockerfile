@@ -153,6 +153,9 @@ ARG NPM_REGISTRY
 ENV NPM_REGISTRY ${NPM_REGISTRY}
 ENV NVM_DIR /home/nodedock/.nvm
 
+ARG INSTALL_NPM_NESTJS_CLI=false
+ARG NESTJS_CLI_VERSION=latest
+
 RUN if [ ${INSTALL_NODE} = true ]; then \
     # Install nvm (A Node Version Manager)
     curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash \
@@ -174,6 +177,9 @@ RUN if [ ${INSTALL_NODE} = true ]; then \
         ;fi \
         && if [ ${INSTALL_NPM_ANGULAR_CLI} = true ]; then \
         npm install -g @angular/cli \
+        ;fi \
+        && if [ ${INSTALL_NPM_NESTJS_CLI} = true ]; then \
+        npm install -g @nestjs/cli@${NESTJS_CLI_VERSION} \
         ;fi \
 ;fi
 
