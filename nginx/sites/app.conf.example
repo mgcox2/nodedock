@@ -3,8 +3,8 @@ server {
     listen 80;
     listen [::]:80;
 
-    server_name app.test;
-    root /var/www/app;
+    server_name nestjs-learn.localhost;
+    root /var/www;
     index index.php index.html index.htm;
 
     location / {

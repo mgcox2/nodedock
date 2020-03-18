@@ -65,3 +65,7 @@ typings/
 
 # next.js build output
 .next
+
+# VS Code dev container
+.devcontainer
+devcontainer.json
