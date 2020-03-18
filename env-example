@@ -86,6 +86,10 @@ WORKSPACE_PGID=1000
 WORKSPACE_TIMEZONE=UTC
 WORKSPACE_SSH_PORT=2222
 
+### NESTJS #############################################
+WORKSPACE_INSTALL_NPM_NESTJS_CLI=true
+WORKSPACE_NESTJS_CLI_VERSION=7.0.0
+
 ### NODE ###############################################
 
 NODE_INSTALL_INTL=true
