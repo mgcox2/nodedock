@@ -235,7 +235,8 @@ RUN apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
     rm /var/log/lastlog /var/log/faillog
 
-USER nodedock
+#USER nodedock
+USER root
 
 WORKDIR /var/www
 
@@ -246,6 +247,6 @@ ARG NPM_START_SCRIPT=start
 
 ENV NPM_START_SCRIPT ${NPM_START_SCRIPT}
 
-CMD ["sh", "-c", "npm run ${NPM_START_SCRIPT}"]
+#CMD ["sh", "-c", "npm run ${NPM_START_SCRIPT}"]
 
 EXPOSE 9000
