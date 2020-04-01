@@ -1,0 +1,11 @@
+{
+  "name": "nestjs-learn2",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "runServices": ["nginx", "mongo", "mongo-webui"],
+  "service": "workspace",
+  "workspaceFolder": "/var/www",
+  "shutdownAction": "stopCompose",
+  "postCreateCommand": "uname -a",
+  "remoteUser": "nodedock",
+  "extensions": ["loiane.ts-extension-pack", "wakatime.vscode-wakatime", "dbaeumer.vscode-eslint"]
+}
