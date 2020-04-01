@@ -235,8 +235,7 @@ RUN apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
     rm /var/log/lastlog /var/log/faillog
 
-USER nodedock
-#USER root
+USER root
 
 WORKDIR /var/www
 
