@@ -68,3 +68,6 @@ typings/
 
 # VS Code dev container
 devcontainer.json
+nginx/ssl/cert-key.pem
+nginx/ssl/cert.pem
+nginx/ssl/rootCA.pem
