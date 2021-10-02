@@ -180,6 +180,7 @@ RUN if [ ${INSTALL_NODE} = true ]; then \
         ;fi \
         && if [ ${INSTALL_NPM_NESTJS_CLI} = true ]; then \
         npm install -g @nestjs/cli@${NESTJS_CLI_VERSION} \
+        npm install -g typeorm \        
         ;fi \
 ;fi
 
